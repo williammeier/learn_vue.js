@@ -19,7 +19,7 @@ export default {
   height: 500px;
   display: flex;
   align-items: center;
-  justify-content: flex-start';
+  justify-content: flex-start;
 }
 #main-banner h1 {
   color: #fff;
