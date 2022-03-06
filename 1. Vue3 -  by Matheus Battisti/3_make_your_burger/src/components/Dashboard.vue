@@ -167,6 +167,8 @@ export default {
 select {
   padding: 12px 6px;
   margin-right: 12px;
+  border-radius: 0;
+  border: 1px solid #ccc;
 }
 select,
 .delete-btn {
