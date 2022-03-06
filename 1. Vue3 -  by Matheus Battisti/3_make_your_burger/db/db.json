@@ -90,7 +90,7 @@
         "Cheddar",
         "Tomate"
       ],
-      "status": "Em produção",
+      "status": "Solicitado",
       "id": 6
     },
     {
@@ -114,6 +114,17 @@
       ],
       "status": "Em produção",
       "id": 8
+    },
+    {
+      "nome": "William",
+      "carne": "Maminha",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Pepino",
+        "Cheddar"
+      ],
+      "status": "Solicitado",
+      "id": 9
     }
   ]
 }

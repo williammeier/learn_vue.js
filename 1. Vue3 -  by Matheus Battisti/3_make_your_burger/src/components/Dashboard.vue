@@ -1,7 +1,7 @@
 <template>
   <div id="burger-table" class="burger-table">
     <Message :msg="msg" v-show="msg" />
-    <div>
+    <div style="overflow-x: auto">
       <div id="burger-table-heading">
         <div class="order-id">#:</div>
         <div>Cliente</div>
@@ -10,12 +10,8 @@
         <div>Opcionais</div>
         <div>Ações</div>
       </div>
-      <div id="burger-table-rows">
-        <div
-          class="burger-table-row"
-          v-for="burger in burgers"
-          :key="burger.id"
-        >
+      <table id="burger-table-rows">
+        <ul class="burger-table-row" v-for="burger in burgers" :key="burger.id">
           <div class="order-number">{{ burger.id }}</div>
           <div>{{ burger.nome }}</div>
           <div>{{ burger.pao }}</div>
@@ -46,8 +42,8 @@
               Cancelar
             </button>
           </div>
-        </div>
-      </div>
+        </ul>
+      </table>
     </div>
   </div>
 </template>
@@ -117,47 +113,78 @@ export default {
 #burger-table {
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 50vh;
 }
-#burger-table-heading,
-#burger-table-rows,
-.burger-table-row {
+#burger-table-heading {
+  display: flex;
+  flex-direction: nowrap;
+}
+#burger-table-rows {
   display: flex;
   flex-wrap: wrap;
+}
+.burger-table-row {
+  display: flex;
+  flex-wrap: nowrap;
 }
 #burger-table-heading {
   font-weight: bold;
   padding: 12px;
+  border: 1px solid #ccc;
   border-bottom: 3px solid #333;
 }
 #burger-table-heading div,
 .burger-table-row div {
   width: 19%;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
 }
 .burger-table-row {
   width: 100%;
   padding: 12px;
-  border-bottom: 1px solid #ccc;
+  border: 1px solid #ccc;
+  border-top: none;
 }
 #burger-table-heading .order-id,
 .burger-table-row .order-number {
   width: 5%;
+  min-width: 35px;
+}
+.burger-table-row ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.burger-table-row ul li {
+  margin-right: 20px;
+}
+.burger-table-row ul li::before {
+  content: '\2022';
+  margin-right: 5px;
 }
 select {
   padding: 12px 6px;
   margin-right: 12px;
 }
+select,
+.delete-btn {
+  width: 100px;
+  height: 40px;
+}
 .delete-btn {
   background-color: #222;
   color: #fcba03;
   font-weight: bold;
-  border: 2px solid #222;
+  border: 1px solid #222;
   padding: 10px;
   margin: 0 auto;
   cursor: pointer;
   transition: 0.5s;
 }
 .delete-btn:hover {
-  background-color: transparent;
-  color: #222;
+  background-color: #333;
+  color: #fefefe;
 }
 </style>

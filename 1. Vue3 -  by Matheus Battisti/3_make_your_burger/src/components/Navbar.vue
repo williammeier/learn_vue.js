@@ -31,14 +31,19 @@ export default {
 }
 #logo {
   height: 40px;
+  margin: 0 15px;
+}
+#nav a#logo-url {
+  border-bottom: none;
 }
 #nav a {
-  color: #fcba03;
+  color: #fefefe;
   text-decoration: none;
-  margin: 2px;
+  margin: 0 15px;
   transition: 0.5s;
 }
 #nav a:hover {
   color: #fff;
+  border-bottom: 1px solid #fefefe;
 }
 </style>

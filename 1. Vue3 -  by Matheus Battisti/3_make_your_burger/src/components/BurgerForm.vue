@@ -35,8 +35,8 @@
         </div>
 
         <div class="input-container" id="opcionais-container">
-          <label id="opcionais-title" for="opcionais"
-            >Selecione os opcionais:</label
+          <span id="opcionais-title" for="opcionais"
+            >Selecione os opcionais:</span
           >
           <div
             class="checkbox-container"
@@ -48,12 +48,13 @@
               name="opcionais"
               v-model="opcionais"
               :value="opcional.tipo"
+              :id="opcional.id"
             />
-            <span>{{ opcional.tipo }}</span>
+            <label :for="opcional.id">{{ opcional.tipo }}</label>
           </div>
         </div>
 
-        <div class="input-container">
+        <div class="input-container input-btn">
           <input type="submit" class="submit-btn" value="Criar meu Burger" />
         </div>
       </form>
@@ -124,64 +125,123 @@ export default {
 
 <style scoped>
 #burger-form {
-  max-width: 400px;
+  max-width: 350px;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  #burger-form {
+    max-width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .input-container {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
+@media (min-width: 768px) {
+  #burger-form {
+    justify-content: space-around;
+  }
+}
 label {
-  font-weight: bold;
-  margin-bottom: 15px;
+  font-weight: 400;
+  margin-bottom: 5px;
   color: #222;
-  padding: 5px 10px;
-  border-left: 4px solid #fcba03;
+  padding: 2px 0;
 }
 input,
 select {
-  padding: 5px 10px;
-  width: 300px;
+  padding: 7px 10px;
+  width: 100%;
   background-color: #fff;
   outline: none;
+  color: #333;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 1px solid #969696;
+  height: 35px;
+  display: block;
+}
+input::placeholder {
+  opacity: 1;
 }
 #opcionais-container {
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  input,
+  select {
+    width: 300px;
+  }
+  #opcionais-container {
+    margin: 10px;
+  }
 }
 #opcionais-title {
   width: 100%;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .checkbox-container {
   display: flex;
   align-items: start;
-  width: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin-right: 40px;
 }
-.checkbox-container span,
+.checkbox-container label,
 .checkbox-container input {
   border-left: none;
   width: auto;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.checkbox-container span {
+.checkbox-container input {
+  height: 16px;
+  width: 16px;
+  min-width: 22px;
+  max-width: 22px;
+  border: 1px solid #969696;
+}
+.checkbox-container label {
   margin-left: 6px;
   padding: 0;
 }
-
+.input-container.input-btn {
+  height: 45px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
 .submit-btn {
   background: #222;
   color: #fcba03;
   font-weight: bold;
-  border: 2px solid #222;
-  padding: 10px;
+  border: 1px solid #222;
+  padding: 0 20px;
   font-size: 16px;
   margin: 0 auto;
   cursor: pointer;
   transition: 0.5 all ease;
+  margin-bottom: 0;
+  line-height: 16px;
+  line-height: 28px;
+  display: flex;
+  text-align: center;
+  height: 100%;
 }
 .submit-btn:hover {
-  background: transparent;
-  color: #222;
+  background: #333;
+  color: #fefefe;
 }
 </style>
