@@ -1,0 +1,115 @@
+html {
+  box-sizing: border-box;
+  /* width: 100%;
+  height: 100%; */
+  overflow: hidden;
+  height: auto;
+  width: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+  background: #261c33;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  color: #8d81f3;
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 0;
+  max-width: 300px;
+  /* margin: 30px auto; */
+}
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 255px;
+  margin: 0 auto;
+  font-family: monospace, sans-serif;
+  font-size: 22px;
+}
+.settings-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.settings {
+  width: 100%;
+  z-index: 2;
+  margin: 20px 0;
+}
+@media only screen and (min-width: 992px) {
+  h2 {
+    max-width: 100%;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    max-width: 768px;
+    height: 420px;
+  }
+  section.settings {
+    width: 50%;
+    margin: 0;
+  }
+  .settings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+main label {
+  display: block;
+}
+main input[type='range'] {
+  display: block;
+  margin-bottom: 10px;
+  width: 230px;
+}
+.box-container {
+  padding: 50px;
+  border: 1px solid #8d81f3;
+}
+.box {
+  width: 150px;
+  height: 150px;
+  background: #8d81f3;
+}
+
+button {
+  background-color: #8d81f3;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+
+label {
+  color: #fff;
+}
