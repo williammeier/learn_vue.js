@@ -16,7 +16,17 @@
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pizza__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pizza */ \"./pizza.js\");\n\r\n\r\n_pizza__WEBPACK_IMPORTED_MODULE_0__[\"default\"].pepperoni()\r\n_pizza__WEBPACK_IMPORTED_MODULE_0__[\"default\"].bacon()\r\n\n\n//# sourceURL=webpack://section-5/./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pizza__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pizza */ \"./pizza.js\");\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main.scss */ \"./main.scss\");\n\r\n\r\n\r\n_pizza__WEBPACK_IMPORTED_MODULE_0__[\"default\"].pepperoni()\r\n_pizza__WEBPACK_IMPORTED_MODULE_0__[\"default\"].bacon()\r\n\n\n//# sourceURL=webpack://section-5/./index.js?");
+
+/***/ }),
+
+/***/ "./main.scss":
+/*!*******************!*\
+  !*** ./main.scss ***!
+  \*******************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://section-5/./main.scss?");
 
 /***/ }),
 
