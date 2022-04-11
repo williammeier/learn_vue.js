@@ -1,4 +1,4 @@
-# section6-componentes
+# section6
 
 ## Project setup
 ```
