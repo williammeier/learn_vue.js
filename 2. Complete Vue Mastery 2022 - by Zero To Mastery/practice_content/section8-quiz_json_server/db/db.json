@@ -1,0 +1,240 @@
+{
+  "questions": [
+    {
+      "q": "Qual o resultado de 2 + 2?",
+      "answers": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "q": "Quantas letras tem na palavra Banana?",
+      "answers": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "q": "Quantos meses tem 28 dias?",
+      "answers": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "q": "Qual o país com maip PIB per capita do mundo?",
+      "answers": [
+        {
+          "text": "China",
+          "is_correct": false
+        },
+        {
+          "text": "Luxemburgo",
+          "is_correct": true
+        },
+        {
+          "text": "Estados Unidos",
+          "is_correct": false
+        },
+        {
+          "text": "Cingapura",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "q": "Qual a cor do cavalo branco de napoleão?",
+      "answers": [
+        {
+          "text": "Preto",
+          "is_correct": false
+        },
+        {
+          "text": "Cinza",
+          "is_correct": false
+        },
+        {
+          "text": "Branco",
+          "is_correct": true
+        },
+        {
+          "text": "Azul",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "q": "De quem é a famosa frase “Penso, logo existo”?",
+      "answers": [
+        {
+          "text": "Francis Bacon",
+          "is_correct": false
+        },
+        {
+          "text": "Galileu Galilei",
+          "is_correct": false
+        },
+        {
+          "text": "Descartes",
+          "is_correct": true
+        },
+        {
+          "text": "Sócrates",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "q": "De onde é a invenção do chuveiro elétrico?",
+      "answers": [
+        {
+          "text": "Itália",
+          "is_correct": false
+        },
+        {
+          "text": "França",
+          "is_correct": false
+        },
+        {
+          "text": "Inglaterra",
+          "is_correct": false
+        },
+        {
+          "text": "Brasil",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "q": "Quais o menor e o maior país do mundo??",
+      "answers": [
+        {
+          "text": "Vaticano e Rússia",
+          "is_correct": true
+        },
+        {
+          "text": "Nauru e China",
+          "is_correct": false
+        },
+        {
+          "text": "Mônaco e China",
+          "is_correct": false
+        },
+        {
+          "text": "São Marino e Índia",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "q": "O que a palavra legend significa em português?",
+      "answers": [
+        {
+          "text": "Legendado",
+          "is_correct": false
+        },
+        {
+          "text": "Lenda",
+          "is_correct": true
+        },
+        {
+          "text": "Conto",
+          "is_correct": false
+        },
+        {
+          "text": "Legenda",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "q": "Qual a capital do Canadá?",
+      "answers": [
+        {
+          "text": "Ottawa",
+          "is_correct": true
+        },
+        {
+          "text": "Montreal",
+          "is_correct": false
+        },
+        {
+          "text": "Québec",
+          "is_correct": false
+        },
+        {
+          "text": "Toronto",
+          "is_correct": false
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "min": 0,
+      "max": 3,
+      "title": "Oh No!",
+      "desc": "Estude mais para quem sabe ter mais sucesso na próxima!"
+    },
+    {
+      "min": 4,
+      "max": 6,
+      "title": "Vamos melhorar?",
+      "desc": "Estude mais um pouco para chegar lá!"
+    },
+    {
+      "min": 7,
+      "max": 9,
+      "title": "Aí sim!",
+      "desc": "Estudar definitivamente valeu a pena para você!"
+    },
+    {
+      "min": 10,
+      "max": 10,
+      "title": "Wooow, você é um gênio!",
+      "desc": "Você é alguém com conhecimento acima da média!"
+    }
+  ]
+}
