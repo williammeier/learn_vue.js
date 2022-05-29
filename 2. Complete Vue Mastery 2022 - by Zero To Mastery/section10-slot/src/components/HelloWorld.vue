@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    <slot :user="user" :favorites="favorites"></slot>
+  </div>
 </template>
 
 <script>
