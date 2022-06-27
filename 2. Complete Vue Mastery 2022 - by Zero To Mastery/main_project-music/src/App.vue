@@ -499,5 +499,8 @@ export default {
     AppHeader,
     ModalAuth,
   },
+  created() {
+    this.$store.dispatch('init_login');
+  },
 };
 </script>
